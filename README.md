@@ -1,7 +1,7 @@
 <h2>Simple React Front-end</h2>
 
 <p>
-To run this project, clone it, cd into it, and hit 'npm install' and then 'npm start'.
+To run this project, clone it, cd into it, and hit `npm install` and then 'npm start'.
 </p>
 <p>
 Alternatively, use 'yarn install' and 'yarn start'.
