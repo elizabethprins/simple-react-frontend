@@ -2,6 +2,8 @@
 
 <p>
 To run this project, clone it, cd into it, and hit 'npm install' and then 'npm start'.
+</p>
+<p>
 Alternatively, use 'yarn install' and 'yarn start'.
 </p>
 <p>
