@@ -34,6 +34,7 @@ class Main extends React.PureComponent {
   }
 
   render() {
+    if (!this.props.currentUser) return null
     console.log(this)
 
     return (

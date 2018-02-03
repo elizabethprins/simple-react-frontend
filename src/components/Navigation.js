@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { connect } from 'react-redux'
-import { push } from 'react-router-redux'
+import { replace } from 'react-router-redux'
 
 import signIn from '../actions/sign-in'
 import signOut from '../actions/sign-out'
@@ -26,7 +26,7 @@ class Navigation extends React.PureComponent {
 
   componentWillMount() {
     if (!this.props.signedIn) {
-      this.props.push('/login')
+      this.props.replace('/login')
     }
   }
 
@@ -64,4 +64,4 @@ const mapStateToProps = ({ currentUser }) => ({
   signedIn: (!!currentUser && !!currentUser._id)
 })
 
-export default connect(mapStateToProps, { signIn, signOut, push })(Navigation)
+export default connect(mapStateToProps, { signIn, signOut, replace })(Navigation)
